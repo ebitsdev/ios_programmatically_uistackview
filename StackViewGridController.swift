@@ -58,7 +58,7 @@ class StackViewGridController: UIViewController {
     }
     func fitParenLayout(_ child: UIView, parentView: UIView){
         amountDisplayLabel.bottomAnchor.constraint(equalTo: child.topAnchor)
-        child.setAnchor(top: parentView.safeTopAnchor, left: parentView.safeLeftAnchor, bottom: nil, right: parentView.safeRightAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, paddingRight: 10)
+        child.deifineAnchors(top: parentView.safeTopAnchor, left: parentView.safeLeftAnchor, bottom: nil, right: parentView.safeRightAnchor, paddingTop: 10, paddingLeft: 10, paddingBottom: 10, paddingRight: 10)
     }
     
 }
